@@ -34,6 +34,13 @@ public class ExampleUnitTest {
     }
 
     @Test
+    public void testTwoIsIII(){
+        ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
+        String result = calculator.calculate(3);
+        Assert.assertEquals("III", result);
+    }
+
+    @Test
     public void testTwoIsIV(){
         ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
         String result = calculator.calculate(4);
@@ -45,6 +52,35 @@ public class ExampleUnitTest {
         ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
         String result = calculator.calculate(5);
         Assert.assertEquals("V", result);
+    }
+
+    @Test
+    public void testTwoIsVI(){
+        ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
+        String result = calculator.calculate(6);
+        Assert.assertEquals("VI", result);
+    }
+
+    @Test
+    public void testTwoIsX(){
+        ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
+        String result = calculator.calculate(10);
+        Assert.assertEquals("X", result);
+    }
+
+    @Test
+    public void testTwoIsIX(){
+        ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
+        String result = calculator.calculate(9);
+        Assert.assertEquals("IX", result);
+    }
+
+
+    @Test
+    public void testTwoIsXI(){
+        ArabicToRomanCalculator calculator = new ArabicToRomanCalculator();
+        String result = calculator.calculate(11);
+        Assert.assertEquals("XI", result);
     }
 
 }
